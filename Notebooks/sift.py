@@ -18,7 +18,7 @@ def process_image(imagename,resultname,params="--edge-thresh 10 --peak-thresh 5"
         im.save('tmp.pgm')
         imagename = 'tmp.pgm'
 
-    cmmd = str("sift "+imagename+" --output="+resultname+
+    cmmd = str("/Users/quincy/Downloads/vlfeat-0.9.20/bin/maci64/sift "+imagename+" --output="+resultname+
                 " "+params)
     os.system(cmmd)
     print 'processed', imagename, 'to', resultname
